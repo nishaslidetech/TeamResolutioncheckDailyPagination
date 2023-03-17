@@ -31,7 +31,7 @@ public class A4Pages extends BaseClass {
 			System.out.println("Resolution  for A4 pages= " + w + "*" + h);
 			driver.get(config.getProperty("testsiteurl"));
 			WebElement onePager = wait
-					.until(ExpectedConditions.elementToBeClickable(By.linkText(OR.getProperty("onePager"))));
+					.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty("onePager"))));
 			onePager.click();
 			log.info("onePager is successfully clicked");
 			Thread.sleep(6000);
